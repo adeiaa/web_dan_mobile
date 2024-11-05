@@ -1,0 +1,48 @@
+ 
+
+/* Mengatur flexbox pada elemen utama */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8eaff; /* Ungu sangat pudar untuk latar belakang body */
+}
+/* Gaya untuk elemen header, footer, main */
+header, footer {
+    background-color: #d1c4e9; /* Ungu pudar untuk header dan footer */
+    padding: 1em;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #f8eaff; /* Ungu sangat pudar untuk latar belakang main */
+}
+/* Gaya untuk elemen nav, article, dan aside */
+nav, article, aside {
+    background-color: #e6d5f7; /* Ungu sangat lembut untuk elemen konten */
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #d1c4e9; /* Ungu pudar untuk border */
+    border-radius: 8px; /* Memberikan sedikit radius pada border */
+}
+/* Layout untuk konten utama */
+.content-wrapper {
+    display: flex;
+    gap: 1em;
+}
+.articles {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+aside {
+    flex: 1;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
